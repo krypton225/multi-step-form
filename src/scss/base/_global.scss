@@ -1,0 +1,16 @@
+:root {
+    --base-font-size: 16px;
+    --fw-400: 400;
+    --fw-500: 500;
+    --fw-600: 600;
+}
+
+::selection {
+    background-color: var(--marine-blue);
+    color: var(--light-blue);
+}
+
+body {
+    font-family: "Ubuntu", sans-serif;
+    font-size: var(--base-font-size);
+}
