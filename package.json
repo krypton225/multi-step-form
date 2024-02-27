@@ -1,0 +1,47 @@
+{
+    "name": "multi-step-form",
+    "version": "1.0.0",
+    "description": "This is just a training in Front End Mentor website.",
+    "main": "index.js",
+    "scripts": {
+        "dev": "concurrently --prefix-colors=\"magenta,cyan,yellow,blue\" \"npm run postcss:watch\" \"npm run pug-js\" \"npm run server\" \"npm run watcher\"",
+        "start": "concurrently --prefix-colors=\"magenta,cyan,yellow\" \"npm run server\" \"npm run postcss:watch\" \"npm run out-wpk-production\"",
+        "watcher": "concurrently --prefix-colors=\"magenta,cyan,red\" \"npm run sass:watch\" \"npm run ts:watch\" \"npm run out-wpk-dev\"",
+        "postcss:watch": "postcss src/styles/index.css --dir public --use autoprefixer cssnano --watch",
+        "sass:watch": "sass --no-source-map ./src/scss/index.scss:src/styles/index.css --watch",
+        "ts:watch": "npx tsc --watch",
+        "sass:comp": "sass --no-source-map ./src/index.scss:index/styles.min.css --watch --style=compressed",
+        "out-wpk-dev": "webpack --mode=development --watch",
+        "out-wpk-production": "webpack --mode=production",
+        "server": "live-server --open=./index.html",
+        "pug-js": "pug ./src/pug-js/index.pug --out ./ --watch --pretty",
+        "tags": "git push repo --tags",
+        "gen:lock": "npm i --package-lock-only"
+    },
+    "keywords": [
+        "HTML5",
+        "CSS3",
+        "PostCSS",
+        "SCSS",
+        "JavaScript",
+        "TypeScript",
+        "PugJS",
+        "Webpack"
+    ],
+    "author": "Khaled Mohamed",
+    "license": "MIT",
+    "devDependencies": {
+        "autoprefixer": "^10.4.17",
+        "concurrently": "^8.2.2",
+        "cssnano": "^6.0.5",
+        "live-server": "^1.2.2",
+        "postcss": "^8.4.35",
+        "postcss-cli": "^11.0.0",
+        "pug": "^3.0.2",
+        "pug-cli": "^1.0.0-alpha6",
+        "sass": "^1.71.1",
+        "typescript": "^5.3.3",
+        "webpack": "^5.90.3",
+        "webpack-cli": "^5.1.4"
+    }
+}
