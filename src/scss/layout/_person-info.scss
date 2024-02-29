@@ -1,0 +1,34 @@
+.person-info {
+    margin-top: 2rem;
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+
+        .btn {
+            margin-top: 3rem;
+            align-self: flex-end;
+        }
+
+        &-section {
+            &__header {
+                margin-bottom: 0.25rem;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .validation {
+                    color: var(--strawberry-red);
+                    font-size: 0.9rem;
+                    font-weight: var(--fw-600);
+                    display: none;
+
+                    &.show {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}

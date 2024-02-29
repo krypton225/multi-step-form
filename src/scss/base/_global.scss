@@ -3,14 +3,18 @@
     --fw-400: 400;
     --fw-500: 500;
     --fw-600: 600;
+    --radius: 0.5rem;
 }
 
 ::selection {
     background-color: var(--marine-blue);
-    color: var(--light-blue);
+    color: var(--white);
 }
 
 body {
     font-family: "Ubuntu", sans-serif;
     font-size: var(--base-font-size);
+    display: grid;
+    place-items: center;
+    background-color: var(--light-gray);
 }

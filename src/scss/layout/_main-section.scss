@@ -1,0 +1,10 @@
+.main {
+    width: 53.125rem;
+    height: 570px;
+    padding: 1rem;
+    border-radius: var(--radius);
+    background-color: var(--white);
+    display: flex;
+    align-items: flex-start;
+    gap: 5rem;
+}

@@ -1,0 +1,29 @@
+label {
+    color: var(--marine-blue);
+    text-transform: capitalize;
+    font-weight: var(--fw-500);
+}
+
+input {
+    &[type="text"],
+    &[type="email"],
+    &[type="tel"] {
+        width: 100%;
+        padding: 0.5rem 0.56rem;
+        outline: none;
+        border-radius: 0.5rem;
+        border: 1px solid var(--light-gray);
+
+        &.error {
+            border-color: var(--strawberry-red);
+        }
+
+        &:focus {
+            border-color: var(--pastel-blue);
+        }
+
+        &::placeholder {
+            color: var(--cool-gray);
+        }
+    }
+}

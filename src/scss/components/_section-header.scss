@@ -1,0 +1,12 @@
+.sec {
+    &-title {
+        font-size: 2.2rem;
+        font-weight: var(--fw-600);
+        color: var(--marine-blue);
+    }
+
+    &-desc {
+        margin-bottom: 2rem;
+        color: var(--cool-gray);
+    }
+}
